@@ -2,11 +2,16 @@
 #define QUEUE_H
 
 
+
+
 /* a queue contains positive integer values. */
 typedef struct Queue
 {
-	// Complete the definition here
-
+	unsigned int* data; //array
+	unsigned int size; //max queue size
+	int front; //index to the start
+	int end; // index to the end
+	int count; //num of elements
 } Queue;
 
 void initQueue(Queue* q, unsigned int size);
