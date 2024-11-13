@@ -54,3 +54,13 @@ void cleanStack(Stack* s)
 		pop(s);
 	}
 }
+
+bool isEmpty(Stack* s)
+{
+	return (s->list.head == nullptr);
+}
+
+bool isFull(Stack* s)
+{
+	return false;
+}
